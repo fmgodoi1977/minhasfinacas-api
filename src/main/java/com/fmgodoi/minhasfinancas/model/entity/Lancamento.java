@@ -17,8 +17,10 @@ import javax.persistence.Table;
 
 import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import model.enums.StatusLancamento;
 import model.enums.TipoLancamento;
 
@@ -26,6 +28,8 @@ import model.enums.TipoLancamento;
 @Table(name = "lancamento", schema = "financas")
 @Builder
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Lancamento {
 
 	@Id
