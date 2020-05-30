@@ -2,6 +2,7 @@ package com.fmgodoi.minhasfinancas.service;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 import com.fmgodoi.minhasfinancas.model.entity.Lancamento;
@@ -23,9 +24,7 @@ public interface LancamentoService {
 	void validar(Lancamento lancamento);
 
 	Optional<Lancamento> obterPorId(Long id);
-	
+
 	BigDecimal obterSaldoPorUsuario(Long id);
-	
-	
 
 }
